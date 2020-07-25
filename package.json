@@ -1,0 +1,22 @@
+{
+  "name": "advent-of-code-2016",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only ./index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triamero/advent-of-code-2016.git"
+  },
+  "author": "triamero",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^8.0.1",
+    "ts-node-dev": "^1.0.0-pre.56",
+    "typescript": "^3.9.7"
+  }
+}
