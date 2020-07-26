@@ -5,13 +5,13 @@
     "strict": true,
     "strictNullChecks": false,
     "moduleResolution": "node",
-    "baseUrl": "./src",
+    "baseUrl": "./sources",
     "paths": {
       "@adv/*": [
         "./*"
       ]
     }
   },
-  "include": ["./src"],
-  "exclude": ["./ui"]
+  "include": ["./sources", "./tests"],
+  "exclude": ["./node_modules"]
 }
