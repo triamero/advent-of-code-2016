@@ -1,11 +1,12 @@
-import {Day1, Day2, IDay} from "./days";
+import {Day1, Day2, Day3, IDay} from "./days";
 
 export class Main {
     public run(): void {
 
         const days: IDay[] = [
             new Day1(),
-            new Day2()
+            new Day2(),
+            new Day3()
         ];
 
         for (let i = 0; i < days.length; i++) {
