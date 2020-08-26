@@ -1,20 +1,23 @@
-import {Day, Day1} from "./days";
+import {Day1, Day2, IDay} from "./days";
 
 export class Main {
     public run(): void {
 
-        const days: Day[] = [
-            new Day1()
+        const days: IDay[] = [
+            new Day1(),
+            new Day2()
         ];
 
         for (let i = 0; i < days.length; i++) {
             const day = days[i];
 
-            const result1 = day.solve1(day.puzzle);
-            const result2 = day.solve2(day.puzzle);
+            const puzzle = day.getPuzzle();
 
-            console.log(`[${day.name}] part 1: ${result1}`);
-            console.log(`[${day.name}] part 2: ${result2}`);
+            const result1 = day.solve1(puzzle);
+            const result2 = day.solve2(puzzle);
+
+            console.log(`[${day.getName()}] part 1: ${result1}`);
+            console.log(`[${day.getName()}] part 2: ${result2}`);
         }
     }
 }
